@@ -33,7 +33,7 @@ public class Obstacle : ICell
     public bool CanMoveTo() => false;
     public void Print() => Console.Write(Type switch
     {
-        ObstacleType.Water => "##",
+        ObstacleType.Water => "WW", //alterado simbolo agua
         ObstacleType.Tree => "%%", //Alterado o simbolo da arvore
         _ => throw new NotImplementedException()
     });
