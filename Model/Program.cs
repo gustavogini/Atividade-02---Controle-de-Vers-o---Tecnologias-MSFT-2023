@@ -33,8 +33,10 @@ public class Obstacle : ICell
     public bool CanMoveTo() => false;
     public void Print() => Console.Write(Type switch
     {
+
         ObstacleType.Water => "@@", //Criacao de conflito V3.2
         ObstacleType.Tree => "**", //Alterado o simbolo da arvore
+
         _ => throw new NotImplementedException()
     });
 }
