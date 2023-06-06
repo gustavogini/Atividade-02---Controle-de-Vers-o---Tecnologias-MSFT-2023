@@ -34,7 +34,7 @@ public class Obstacle : ICell
     public void Print() => Console.Write(Type switch
     {
         ObstacleType.Water => "##",
-        ObstacleType.Tree => "$$",
+        ObstacleType.Tree => "%%", //Alterado o simbolo da arvore
         _ => throw new NotImplementedException()
     });
 }
